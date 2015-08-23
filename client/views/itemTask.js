@@ -42,6 +42,11 @@ Template.itemTask.events ({
   },
 	 'click .checkbox2': function (evt, tmpl) {
    Tasks.update(this._id, {$set: {doneTask: true}});
+   
+    
+  },
+  'click .checkbox3': function (evt, tmpl) {
+   Tasks.update(this._id, {$set: {doneTask: false}});
     
   },
   'click .action': function (evt, tmpl) {
